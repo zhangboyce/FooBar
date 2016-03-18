@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane alignment="CENTER_RIGHT" hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="keywordshandler.KeywordsHandlerController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1100.0" minWidth="10.0" prefWidth="1100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="314.0" minHeight="10.0" prefHeight="288.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="156.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="312.0" minHeight="10.0" prefHeight="302.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="228.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <opaqueInsets>
+      <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+   </opaqueInsets>
+   <children>
+      <TextArea fx:id="source_textArea" prefHeight="200.0" prefWidth="200.0" />
+      <TextArea fx:id="handled_textArea" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="15.0" GridPane.rowIndex="1">
+         <children>
+            <Button id="apply" fx:id="apply_button" mnemonicParsing="false" prefHeight="26.0" prefWidth="132.0" text="Apply">
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="15.0" GridPane.rowIndex="3">
+         <children>
+             <Button id="copy" fx:id="copy_button"  prefHeight="26.0" prefWidth="132.0" text="Copy" />
+             <Button id="close" fx:id="close_button" layoutX="52.0" prefHeight="26.0"  prefWidth="99.0" text="Close">
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+   </children>
+</GridPane>
