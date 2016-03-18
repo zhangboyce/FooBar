@@ -1,0 +1,8 @@
+FooBar.iml
+*.class
+out/*
+.idea/*
+META-INF/*
+target/*
+*.DS_Store
+*.dat
